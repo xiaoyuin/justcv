@@ -13,9 +13,8 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
 \RequirePackage[utf8]{inputenc}
-
+\RequirePackage{CJKutf8}
 \RequirePackage[charter]{mathdesign}
-
 
 
 \pagestyle{fancy}
@@ -64,8 +63,8 @@
 \newcommand{\cvexperience}[5]{
   \widevspace
   \item[] \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-      \hspace{-10pt}\textbf{#1} & #2 \\
-      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+      \hspace{-10pt}\normalsize{\textbf{#1}} & \normalsize{#2} \\
+      \hspace{-10pt}\textit{\small{#3}} & \textit{\small{ #4}} \\
     \end{tabular*}\narrowvspace
   #5
 }
@@ -74,28 +73,24 @@
   \widevspace
   \item[]
   \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-      \hspace{-10pt}\textbf{#1} & #2 \\
-      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+      \hspace{-10pt}\normalsize{\textbf{#1}} & \normalsize{#2} \\
+      \hspace{-10pt}\textit{\small{#3}} & \textit{\small{ #4}} \\
     \end{tabular*}\narrowvspace
   #5
 }
 
 \newcommand{\cvline}[2]{
-  \item[]\small{
-    \hspace{-9pt}\textbf{#1}{#2 \narrowvspace}
-  }
+  \item[] \small{\hspace{-9pt}\textbf{#1}#2}
+  \narrowvspace
 }
 
 \newcommand{\cvbulletline}[2]{
-  \item\small{
-    \textbf{#1}{#2 \narrowvspace}
-  }
+  \item \small{\textbf{#1}#2}
+  \narrowvspace
 }
 
 \newcommand{\cvplaceholder}{
   \item
 }
 
-\newcommand{\vdivider}{ 
-  $\vert $
-}
+\newcommand{\vdivider}{$\vert$ }
