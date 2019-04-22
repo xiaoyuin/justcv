@@ -13,12 +13,6 @@ Adapted from https://github.com/sb2nov/resume
 3. flexible structure
 4. allows simple customization
 
-## TODO
-
-- [ ] Add publication item
-- [ ] Add reference item
-- [ ] Better space control
-
 ## My CV
 
 ![Resume Screenshot](/preview_my_cv.png)
@@ -78,6 +72,12 @@ Adapted from https://github.com/sb2nov/resume
 
     \end{document}
 ```
+
+## TODO
+
+- [ ] Add publication item
+- [ ] Add reference item
+- [ ] Better space control
 
 ## License
 
