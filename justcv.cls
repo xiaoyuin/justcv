@@ -46,16 +46,14 @@
 
 \newcommand{\novspace}{\vspace{0pt}}
 \newcommand{\narrowvspace}{\vspace{-4pt}}
-\newcommand{\normalvspace}{\vspace{2pt}}
 \newcommand{\widevspace}{\vspace{4pt}}
 \newcommand{\widervspace}{\vspace{8pt}}
-\newcommand{\narrowervspace}{\vspace{-6pt}}
+\newcommand{\narrowervspace}{\vspace{-8pt}}
 
 %-------------------------
 % CV Commands
 \newcommand{\cvsection}[2]{
   \narrowervspace\section{#1}
-  \narrowvspace
   \begin{itemize}[leftmargin=*]
   #2
   \end{itemize}
@@ -83,11 +81,6 @@
 
 \newcommand{\cvline}[2]{
   \item[] \small{\hspace{-9pt}\textbf{#1}#2}
-  \narrowvspace
-}
-
-\newcommand{\cvheadline}[2]{
-  \item[] \normalsize{\hspace{-9pt}\textbf{#1}#2}
   \narrowvspace
 }
 
